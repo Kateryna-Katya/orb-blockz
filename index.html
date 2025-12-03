@@ -1,79 +1,334 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Orb Blockz | AI-инструменты для реальных задач</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orb-Blockz — ИИ для жизни и работы</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@700;900&display=swap"
-    rel="stylesheet">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 
-  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
 
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
- 
-    <script type="module" crossorigin src="/test-two/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/test-two/assets/styles-guStct1H.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <script type="module" crossorigin src="/orb-blockz/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/orb-blockz/assets/styles-CIOnj8rJ.css">
   </head>
-  <body>
-    <header class="header" id="header">
+  <body class="page">
+    <header class="header">
   <div class="container header__container">
-    <a href="#hero" class="header__logo logo">
-      <span class="logo__icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-          <path fill-rule="evenodd"
-            d="M11.484 2.804A.75.75 0 0 1 12 2.25c.197 0 .385.066.516.154l1.433.955 1.956-1.543c.125-.098.291-.154.46-.154H18c.258 0 .493.13.629.349l2.75 4.125A.75.75 0 0 1 22.5 7.5v9a.75.75 0 0 1-.371.651l-2.75 4.125c-.136.219-.371.349-.629.349h-3.567c-.169 0-.335-.056-.46-.154l-1.956-1.543-1.433.955a.75.75 0 0 1-.516.154c-.197 0-.385-.066-.516-.154l-1.433-.955-1.956 1.543c-.125.098-.291.154-.46.154H6c-.258 0-.493-.13-.629-.349l-2.75-4.125A.75.75 0 0 1 3 16.5v-9a.75.75 0 0 1 .371-.651l2.75-4.125c.136-.219.371-.349.629-.349h3.567c.169 0 .335.056.46.154l1.956 1.543 1.433-.955Z"
-            clip-rule="evenodd" />
-        </svg>
-      </span>
-      <span class="logo__text">Orb Blockz</span>
-    </a>
+      <a href="/" class="logo header__logo">
+          <span class="logo__icon"><i class="fa-solid fa-cube"></i></span>
+          Orb-Blockz
+      </a>
 
-    <nav class="header__nav nav" data-menu>
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#hero" class="nav__link">Главная</a></li>
-        <li class="nav__item"><a href="#platform" class="nav__link">Платформа</a></li>
-        <li class="nav__item"><a href="#benefits" class="nav__link">Преимущества</a></li>
-        <li class="nav__item"><a href="#innovations" class="nav__link">Инновации</a></li>
-        <li class="nav__item"><a href="#blog" class="nav__link">Блог</a></li>
-      </ul>
-      <a href="#contact" class="button button--accent nav__cta">Связаться</a>
-    </nav>
+      <nav class="nav header__nav" id="nav-menu">
+          <ul class="nav__list">
+              <li class="nav__item"><a href="#hero" class="nav__link active">Главная</a></li>
+              <li class="nav__item"><a href="#features" class="nav__link">Возможности</a></li>
+              <li class="nav__item"><a href="#practices" class="nav__link">Практики</a></li>
+              <li class="nav__item"><a href="#education" class="nav__link">Обучение</a></li>
+          </ul>
+          <div class="nav__mobile-action">
+              <a href="#contact" class="btn btn--primary btn--sm">Связаться</a>
+          </div>
+      </nav>
 
-    <button class="header__toggle" aria-label="Открыть меню" data-toggle>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"
-        class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-      </svg>
-    </button>
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary header__btn">Связаться</a>
+          <button class="burger header__burger" aria-label="Открыть меню" id="burger-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
 
-    <main>
+    <main class="main">
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+  <div class="container hero__container">
+      <div class="hero__content">
+          <span class="hero__badge">
+              <i class="fa-solid fa-bolt"></i> Технология нового поколения
+          </span>
+          <h1 class="hero__title">
+              AI-инструменты для <br>
+              <span class="text-gradient">реальных задач</span>
+          </h1>
+          <p class="hero__desc">
+              Воплотите мечты в реальность с помощью платформы, которая меняет правила игры.
+              Простой старт, инновационные алгоритмы и поддержка на каждом этапе.
+          </p>
+          <div class="hero__actions">
+              <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+              <a href="#features" class="btn btn--outline">
+                  <i class="fa-regular fa-circle-play"></i>
+                  Узнать детали
+              </a>
+          </div>
+
+          <div class="hero__stats">
+              <div class="stat-item">
+                  <span class="stat-num">98%</span>
+                  <span class="stat-label">Точность AI</span>
+              </div>
+              <div class="stat-item">
+                  <span class="stat-num">2M+</span>
+                  <span class="stat-label">Обработано данных</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="hero__visual" id="hero-canvas"></div>
+  </div>
+</section>
+
+<section class="section section--about" id="about">
+  <div class="container">
+      <div class="about__grid">
+          <div class="about__content">
+              <span class="section-tag">О платформе</span>
+              <h2 class="section-title">AI, доступный каждому</h2>
+              <p class="section-desc">
+                  Мы верим, что технологии не должны быть сложными. Orb-Blockz — это мост между сложными алгоритмами и вашими повседневными задачами.
+              </p>
+              <ul class="about__list">
+                  <li><i class="fa-solid fa-check-circle"></i> Пошаговый путь, понятный каждому</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Удобная адаптация без сложностей</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Решения, которые меняют правила игры</li>
+              </ul>
+          </div>
+          <div class="about__image">
+              <div class="image-wrapper">
+                  <img src="img/placeholder.png" alt="Интерфейс платформы">
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section section--features" id="features">
+  <div class="container">
+      <div class="section-header">
+          <h2 class="section-title">Возможности платформы</h2>
+          <p class="section-desc">Инновационные инструменты для тех, кто ценит время.</p>
+      </div>
+
+      <div class="features__grid">
+          <div class="feature-card">
+              <div class="feature-card__icon"><i class="fa-solid fa-brain"></i></div>
+              <h3 class="feature-card__title">Умная аналитика</h3>
+              <p class="feature-card__text">Технологии, которые работают на вас. Анализируйте данные в один клик и находите скрытые закономерности.</p>
+          </div>
+          <div class="feature-card">
+              <div class="feature-card__icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <h3 class="feature-card__title">Автоматизация</h3>
+              <p class="feature-card__text">Легко разобраться без опыта. Делегируйте рутину искусственному интеллекту и освободите время для творчества.</p>
+          </div>
+          <div class="feature-card">
+              <div class="feature-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <h3 class="feature-card__title">Безопасность</h3>
+              <p class="feature-card__text">Проверенный партнер. Ваши данные защищены передовыми протоколами шифрования европейского стандарта.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section section--dark" id="practices">
+  <div class="container">
+      <div class="practices__wrapper">
+          <div class="practices__info">
+              <h2 class="section-title text-white">Стратегия роста на базе инноваций</h2>
+              <p class="section-desc text-gray">
+                  Оцените перспективы проекта с нашими PRO-инструментами.
+                  Платформа уже доступна в Европе и предлагает практики, применимые уже сегодня.
+              </p>
+              <a href="#contact" class="btn btn--secondary">Получить доступ</a>
+          </div>
+          <div class="practices__stats">
+              <div class="stat-box">
+                  <span class="stat-box__num">0.2c</span>
+                  <span class="stat-box__label">Скорость отклика</span>
+              </div>
+              <div class="stat-box">
+                  <span class="stat-box__num">24/7</span>
+                  <span class="stat-box__label">Экспертная поддержка</span>
+              </div>
+              <div class="stat-box">
+                  <span class="stat-box__num">100%</span>
+                  <span class="stat-box__label">Аптайм</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section section--education" id="education">
+  <div class="container">
+      <div class="section-header">
+          <h2 class="section-title">Академия знаний</h2>
+          <p class="section-desc">Расширьте горизонты проекта с нашими материалами.</p>
+      </div>
+
+      <div class="blog-grid">
+          <article class="blog-card">
+              <img src="img/placeholder.png" alt="Start AI" class="blog-card__img">
+              <div class="blog-card__content">
+                  <span class="blog-card__date">12 Окт 2025</span>
+                  <h3 class="blog-card__title">Быстрый и лёгкий старт в AI</h3>
+                  <p class="blog-card__excerpt">Как подключить нейросети к бизнесу за 2 минуты без программистов.</p>
+                  <a href="#" class="blog-card__link">Читать далее &rarr;</a>
+              </div>
+          </article>
+          <article class="blog-card">
+              <img src="img/placeholder.png" alt="Career AI" class="blog-card__img">
+              <div class="blog-card__content">
+                  <span class="blog-card__date">08 Окт 2025</span>
+                  <h3 class="blog-card__title">Карьера, которая работает на вас</h3>
+                  <p class="blog-card__excerpt">Новые профессии эпохи искусственного интеллекта: к чему готовиться?</p>
+                  <a href="#" class="blog-card__link">Читать далее &rarr;</a>
+              </div>
+          </article>
+           <article class="blog-card">
+              <img src="img/placeholder.png" alt="Passive Income" class="blog-card__img">
+              <div class="blog-card__content">
+                  <span class="blog-card__date">01 Окт 2025</span>
+                  <h3 class="blog-card__title">Программа пассивного дохода</h3>
+                  <p class="blog-card__excerpt">Как использовать алгоритмы для анализа рынков и инвестиций.</p>
+                  <a href="#" class="blog-card__link">Читать далее &rarr;</a>
+              </div>
+          </article>
+      </div>
+  </div>
+</section>
+
+<section class="section section--contact" id="contact">
+  <div class="container">
+      <div class="contact__wrapper">
+          <div class="contact__text">
+              <h2 class="section-title">Остались вопросы?</h2>
+              <p class="section-desc">
+                  Запишитесь на бесплатную консультацию.
+                  Заполните форму, и мы свяжемся с вами в течение рабочего дня.
+              </p>
+              <ul class="contact__info-list">
+                  <li><i class="fa-solid fa-envelope"></i> hello@orb-blockz.click</li>
+                  <li><i class="fa-solid fa-phone"></i> +49 30 123 456 78</li>
+              </ul>
+          </div>
+
+          <form class="contact__form" id="contact-form">
+              <div class="form-group">
+                  <label for="name">Ваше имя</label>
+                  <input type="text" id="name" name="name" placeholder="Иван Петров" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="name@example.com" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="phone">Телефон</label>
+                  <input type="tel" id="phone" name="phone" placeholder="Только цифры..." required>
+                  <span class="form-hint">Вводите только цифры</span>
+              </div>
+
+              <div class="form-group">
+                  <label for="message">Сообщение</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Чем мы можем помочь?" required></textarea>
+              </div>
+
+              <div class="form-group captcha-group">
+                  <label id="captcha-label">Сколько будет 3 + 5?</label>
+                  <input type="number" id="captcha" required>
+              </div>
+
+              <div class="form-checkbox">
+                  <input type="checkbox" id="policy" required>
+                  <label for="policy">Я согласен с <a href="privacy.html" target="_blank">Политикой конфиденциальности</a></label>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full">Отправить запрос</button>
+              <div class="form-status" id="form-status"></div>
+          </form>
+      </div>
+  </div>
+</section>
+
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__col">
+              <a href="/" class="logo footer__logo">
+                  Orb-Blockz
+              </a>
+              <p class="footer__desc">
+                  Технологии нового поколения, которые работают на вас. Экспертная поддержка на всех этапах внедрения ИИ.
+              </p>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Навигация</h3>
+              <ul class="footer__links">
+                  <li><a href="#hero">Главная</a></li>
+                  <li><a href="#features">Возможности</a></li>
+                  <li><a href="#practices">Практики</a></li>
+                  <li><a href="#education">Блог</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Правовая информация</h3>
+              <ul class="footer__links">
+                  <li><a href="privacy.html">Политика конфиденциальности</a></li>
+                  <li><a href="cookies.html">Cookie политика</a></li>
+                  <li><a href="terms.html">Условия использования</a></li>
+                  <li><a href="return.html">Политика возврата</a></li>
+                  <li><a href="disclaimer.html">Отказ от ответственности</a></li>
+                  <li><a href="personal-data-policy.html">Обработка данных</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Контакты</h3>
+              <ul class="footer__contacts">
+                  <li>
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Torstraße 15, 10119 Berlin, Deutschland</span>
+                  </li>
+                  <li>
+                      <i class="fa-solid fa-phone"></i>
+                      <a href="tel:+493012345678">+49 30 123 456 78</a>
+                  </li>
+                  <li>
+                      <i class="fa-solid fa-envelope"></i>
+                      <a href="mailto:hello@orb-blockz.click">hello@orb-blockz.click</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer__bottom">
+          <p>&copy; 2025 Orb-Blockz. Все права защищены. Платформа уже доступна в Европе.</p>
+      </div>
   </div>
 </footer>
-
-
+    <div class="cookie-popup" id="cookie-popup">
+      <div class="cookie-popup__content">
+          <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="cookies.html">Cookie политике</a>.</p>
+      </div>
+      <button class="btn btn--sm btn--primary" id="cookie-accept">Принять</button>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   </body>
 </html>
